@@ -1,0 +1,14 @@
+<section class='header-container'>
+    <div class='header-items'>
+        <div>
+            <% if logged_in? %>
+            <%= current_user.name %>
+            <%= link_to 'Logout', logout_path, method: :delete %>
+            <% else %>
+            <%= "You're not logged in" %>
+            <%= link_to 'Login', login_path %>
+            <% end %>
+        </div>
+    </div>
+</section>
+    

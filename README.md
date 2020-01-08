@@ -1,6 +1,6 @@
 # private-events
 
-## A Project in Partial Completion of The Odin Project
+## A [Project](www.theodinproject.com/courses/ruby-on-rails/lessons/associations) in Partial Completion of The Odin Project
 
 The aim here was to build a site similar to [Eventbrite](www.eventbrite.com) which allows users to create events and then manage user signups.
 

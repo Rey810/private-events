@@ -1,0 +1,11 @@
+<%= form_for @user do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :email %>
+    <%= f.email_field :email, class: 'form-control' %>
+
+    <%= f.submit "Sign Up", class: 'primary-btn' %>
+
+<% end %>
