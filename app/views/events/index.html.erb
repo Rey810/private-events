@@ -1,0 +1,8 @@
+<h1>All Events</h1>
+    <div class='events-container'>
+        <% @all_events.each do |f| %>
+            <ol class='event'>
+                <%= f.title %> hosted by <%= f.creator.name %>
+            </ol>
+        <% end %>
+    </div>

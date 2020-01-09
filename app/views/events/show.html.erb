@@ -1,0 +1,10 @@
+<h1>Information Page for <%= @event.title %> hosted by <%= @event.creator.name %></h1>
+
+<div class='attendees-container'>
+    <h2>Event Attendees</h2>
+    <% @event.attendees.each do |f| %>
+        <ol class='attendees'>
+        <%= f.name %>
+        </ol>
+    <% end %>
+</div>
