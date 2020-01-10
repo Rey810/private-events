@@ -9,9 +9,15 @@
         <% end %>
 </div>
 <div class='list-container attended-events'>
-    <h2>Here are all the events you are attending</h2>
-        <% @user.attended_events.uniq.each do |f| %>
-        <ol class='event'>
+    <h2>Here are all the events you will be attending:</h2>
+        <% @upcoming_events.each do |f| %>
+        <ol class='upcoming event'>
+        <%= f.title %>
+        </ol>
+        <% end %>
+    <h2>Here are all the events you have attended:</h2>
+        <% @previous_events.each do |f| %>
+        <ol class='previous event'>
         <%= f.title %>
         </ol>
         <% end %>

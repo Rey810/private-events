@@ -1,14 +1,15 @@
 <section class='header-container'>
-    <div class='header-items'>
-        <div>
+    <nav class='header-items'>
+            <%= link_to 'All Events', events_path %>
             <% if logged_in? %>
             <%= current_user.name %>
+            <%= link_to 'My Events', user_path(current_user) %>
             <%= link_to 'Logout', logout_path, method: :delete %>
             <% else %>
             <%= "You're not logged in" %>
             <%= link_to 'Login', login_path %>
             <% end %>
-        </div>
-    </div>
+
+    </nav>
 </section>
     

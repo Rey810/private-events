@@ -13,7 +13,7 @@ end
 user_id_range = ((User.first.id)..(User.last.id))
 
 7.times do |n|
-    event = Event.create!(title: Faker::Cannabis.buzzword, creator: User.find(rand(user_id_range)), location:                        Faker::TvShows::RickAndMorty.location, date: Faker::Time.between(from: DateTime.now - 10, to: DateTime.now + 15, format: :default))
+    event = Event.create!(title: Faker::Cannabis.buzzword, creator: User.find(rand(user_id_range)), location:                        Faker::TvShows::RickAndMorty.location, date: Faker::Date.between_except(from: 2.weeks.ago.to_date, to: 1.month.from_now.to_date, excepted: Date.today))
 
     10.times {event.attendees << User.find(rand(user_id_range))}
 end

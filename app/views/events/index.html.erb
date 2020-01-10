@@ -1,8 +1,29 @@
 <h1>All Events</h1>
-    <div class='events-container'>
-        <% @all_events.each do |f| %>
-            <ol class='event'>
-                <%= f.title %> hosted by <%= f.creator.name %>
-            </ol>
-        <% end %>
-    </div>
+    <section class='all-events-container'>
+        <div class='past-events-container'>
+            <h2 class='past-events'>
+                Past Events
+            </h2>
+                <% @past_events.each do |f| %>
+                    <ol class='past-list-item'>
+                        <h3 class='title'>Title:</h3><%= f.title %>
+                        <h3 class='creator'>Creator:</h3><%= f.creator.name %>
+                        <h3 class='date'>Date:</h3><%= f.date %>
+                        <h3 class='location'>Location:</h3><%= f.location %>
+                    </ol>
+                <% end %>
+        </div>
+        <div class='future-events-container'>
+            <h2 class='future-events'>
+                Future Events
+            </h2>
+                <% @future_events.each do |f| %>
+                    <ol class='future-list-item'>
+                        <h3 class='title'>Title:</h3><%= f.title %>
+                        <h3 class='creator'>Creator:</h3><%= f.creator.name %>
+                        <h3 class='date'>Date:</h3><%= f.date %>
+                        <h3 class='location'>Location:</h3><%= f.location %>
+                    </ol>
+                <% end %>
+        </div>
+    </section> 
