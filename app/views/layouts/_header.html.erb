@@ -1,13 +1,13 @@
 <section class='header-container'>
     <nav class='header-items'>
-            <%= link_to 'All Events', events_path %>
+            <li class='header-item'><%= link_to 'Private Events', root_path, id: 'brand' %></li> 
+            <li class='header-item'><%= link_to 'All Events', events_path, class: 'header-link' %></li>
             <% if logged_in? %>
-            <%= current_user.name %>
-            <%= link_to 'My Events', user_path(current_user) %>
-            <%= link_to 'Logout', logout_path, method: :delete %>
+            <li class='header-item'><%= link_to 'My Events', user_path(current_user), class: 'header-link' %></li>
+            <li class='header-item'><%= link_to 'LOGOUT', logout_path, method: :delete, class: 'header-link' %></li>
             <% else %>
-            <%= "You're not logged in" %>
-            <%= link_to 'Login', login_path %>
+            <li class='header-item'>"You're not logged in"</li>
+            <li class='header-item'><%= link_to 'Login', login_path, class: 'header-link' %></li>
             <% end %>
 
     </nav>
