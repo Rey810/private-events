@@ -10,8 +10,8 @@ The aim here was to build a site similar to [Eventbrite](www.eventbrite.com) whi
 3. User can sign in and attend events
 
 ## Skills Used/Gained
-1. Rails model associations
-2. 
+1. Database Schema and data architecture
+2. Rails ActiveRecord Associations
 
 ## Site Function Goals:
     1. A user can create events
