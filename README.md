@@ -18,4 +18,8 @@ The aim here was to build a site similar to [Eventbrite](www.eventbrite.com) whi
     2. A user can attend many events
     3. An event can be attended by many users
 
- *Site design was not regarded as important for this exercise in functionality*
+## Design
+![Eventor Design](demo/Eventinator-Land.png)
+- While not implemented, this is the design I made in Adobe XD
+- Site design was not regarded as important for this exercise in functionality*
+ 
